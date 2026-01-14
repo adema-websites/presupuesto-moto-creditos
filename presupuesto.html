@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta – Sistema de Gestión de Créditos de Motos para Electro S&M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-family-sans: 'Inter', sans-serif;
+            --color-background: #f8f9fa;
+            --color-surface: #ffffff;
+            --color-text-primary: #1e293b;
+            --color-text-secondary: #64748b;
+            --color-accent: #0f172a;
+            --color-accent-light: #4f46e5;
+            --color-border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --border-radius: 8px;
+        }
+        body { font-family:var(--font-family-sans); margin:0; padding:40px 20px; background-color:var(--color-background); color:var(--color-text-primary); line-height:1.7; }
+        .container { max-width:800px; margin:0 auto; background-color:var(--color-surface); padding:50px 60px; box-shadow:var(--shadow); border-radius:var(--border-radius); }
+        header { text-align:center; margin-bottom:50px; }
+        header img { max-width:160px; margin-bottom:20px; }
+        header h1 { color:var(--color-accent); margin:0; font-size:2.2em; font-weight:700; letter-spacing:1px; }
+        header p { color:var(--color-text-secondary); font-size:0.95em; margin:4px 0 0; }
+        h2 { color:var(--color-accent); padding-bottom:12px; margin-top:40px; margin-bottom:25px; font-size:1.2em; font-weight:600; text-transform:uppercase; letter-spacing:1.5px; border-bottom:1px solid var(--color-border); }
+        h3 { color:var(--color-text-primary); margin-top:25px; margin-bottom:15px; font-size:1.1em; font-weight:600; }
+        p, ul { margin-bottom:15px; color:var(--color-text-secondary); }
+        p strong, ul b { color:var(--color-text-primary); font-weight:500; }
+        ul { list-style-type:none; padding-left:0; }
+        ul li { margin-bottom:10px; padding-left:20px; position:relative; }
+        ul li::before { content:'✓'; position:absolute; left:0; color:#10b981; font-weight:700; }
+        table { width:100%; border-collapse:collapse; margin-top:25px; margin-bottom:20px; font-size:0.95em; }
+        table th, table td { padding:15px; text-align:left; border-bottom:1px solid var(--color-border); }
+        table th { color:var(--color-text-secondary); font-weight:600; text-transform:uppercase; font-size:0.8em; letter-spacing:1px; }
+        table td { color:var(--color-text-primary); }
+        table tbody tr:last-child td { border-bottom:none; }
+        .footer { text-align:center; margin-top:50px; padding-top:25px; border-top:1px solid var(--color-border); font-size:0.85em; color:#94a3b8; }
+        @media (max-width: 768px) {
+            body { padding:20px 10px; }
+            .container { padding:30px 20px; }
+            header h1 { font-size: 1.9em; }
+            h2 { font-size: 1.1em; letter-spacing: 1.2px; }
+            table thead { display:none; }
+            table, table tbody, table tr, table td { display:block; width:100%; }
+            table tr { margin-bottom:15px; border:1px solid var(--color-border); border-radius:var(--border-radius); padding:5px 15px; }
+            table td { display:flex; justify-content:space-between; text-align:right; padding:12px 0; border:none; border-bottom:1px dashed var(--color-border); }
+            table tr td:last-child { border-bottom:none; }
+            table td::before { content: attr(data-label); font-weight:600; text-align:left; padding-right:15px; color:var(--color-text-primary); }
+            table .price-total { font-size:1.2em; font-weight:bold; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="https://ademasistemas.com/static/logo.png" alt="Logo Adema Sistemas">
+        <h1>Tu sistema de gestión de ventas de Motos a crédito.</h1>
+        <p>Una solución pensada para hacerte el trabajo más fácil en Electro S&M</p>
+    </header>
+
+    <main>
+        <h2>Cliente</h2>
+        <p><strong>Nombre:</strong> Martín</p>
+        <p><strong>Empresa:</strong> Electro S&M</p>
+        <p><strong>Fecha:</strong> 14 de Enero de 2026</p>
+
+
+        <h2>Un Nuevo Motor para el Crecimiento de Electro S&M</h2>
+        <p>La idea es que arranques esta nueva etapa <strong> sistematizado desde el día uno.</strong> Así, replicamos las buenas prácticas de gestión, evitamos los problemas del papel y te asegurás de tener el control total de los créditos de las motos de forma automática, rápida y sin errores.</p>
+
+        <h2>¿Qué vas a poder hacer con el sistema?</h2>
+        <p>Esta aplicación está diseñada específicamente para uso local en tu empresa, sin depender de internet ni navegadores complejos. Todo se gestiona desde tu computadora para mayor seguridad y rapidez. Vas a poder:</p>
+        <ul>
+            <li><b>Gestión de Clientes completa:</b> Guardar todos los datos importantes de tus compradores (DNI, Dirección, Teléfono, Garantes) para tener siempre a mano la información de contacto y legajo.</li>
+            <li><b>Registro de Ventas de Motos:</b> Registrar cada venta con el detalle de la moto, el precio acordado, la entrega inicial y cómo se financia el resto.</li>
+            <li><b>Control total de Créditos:</b> El sistema calcula automáticamente las cuotas, los intereses (si aplica) y te muestra el calendario de pagos. Vas a saber exactamente cuánto debe cada uno y cuándo vence la próxima cuota.</li>
+            <li><b>Historial de Pagos y Saldos:</b> Cada vez que un cliente paga, lo registrás y el sistema descuenta la deuda. Podrás emitir comprobantes internos y ver el estado de cuenta actualizado al instante.</li>
+        </ul>
+
+        <h2>Las Ventajas para tu Día a Día</h2>
+        <ul>
+            <li><b>Toda la información en un solo lugar:</b> ¡Basta de tener papeles, anotadores y calculadoras por todos lados! Todo estará ordenado en la computadora.</li>
+            <li><b>Ahorrar tiempo y evitar errores:</b> El sistema hace las cuentas por vos. Así evitás errores de tipeo y te queda más tiempo para atender a tus clientes.</li>
+            <li><b>Tener el control total de tu negocio:</b> Vas a poder tomar mejores decisiones porque tendrás la información clara de tus ventas, deudas y productos.</li>
+            <li><b>Una herramienta que no se queda atrás:</b> El día de mañana, si tu negocio sigue creciendo, este sistema puede crecer con vos.</li>
+        </ul>
+
+        <h2>¡En 7 días lo tenés listo para probar!</h2>
+        <p>Mi objetivo es que no pierdas tiempo. En <b>7 días</b> te entrego el sistema instalado para que empieces a cargar tus motos, registrar clientes y probar cómo funciona. Durante esos primeros días estaré atento para cualquier duda o ajuste que necesitemos hacer.</p>
+        <p><b>¡Muy importante!</b></p>
+        <ul>
+            <li>El sistema se instala <b>directamente en tu computadora</b>. No depende de internet para funcionar.</li>
+            <li>Para que te sientas seguro usándolo, te voy a grabar <b>videos tutoriales muy cortos y simples</b>, mostrándote paso a paso cómo hacer cada cosa (cargar un cliente, una venta, ver una deuda, etc.). Los podrás ver las veces que quieras.</li>
+        </ul>
+
+        <h2>Un Plus para tu Seguridad: Reporte BCRA</h2>
+        <p>Para darte más tranquilidad al vender, incorporamos una herramienta valiosa:</p>
+        <ul>
+            <li><b>Informe de Deudores al Instante:</b> Si tenés conexión a internet, el sistema puede consultar la base del Banco Central y generarte un <b>reporte PDF</b> con la situación crediticia de tu cliente. Así sabrás si es confiable antes de aprobar el crédito.</li>
+        </ul>
+
+        <h2>Inversión para Organizar y Hacer Crecer tu Negocio</h2>
+        <p>Para que sea más claro, dividí la propuesta en dos partes. El sistema base que ya tengo desarrollado y la parte nueva que construiré especialmente para vos.</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Concepto</th>
+                <th style="text-align:right;">Importe (USD)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Concepto">Sistema Integral de Gestión de Ventas y Créditos de Motos (Licencia de Uso Local)</td>
+                <td data-label="Importe"><b>USD 150</b></td>
+            </tr>
+            <tr>
+                <td data-label="Concepto"><b>Total de la Inversión</b></td>
+                <td data-label="Importe" class="price-total">USD 150</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>Condiciones y Facilidades de Pago</h2>
+        <ul>
+            <li><b>Seña para comenzar:</b> 50% al aceptar la propuesta (USD 75).</li>
+            <li><b>Pago final:</b> 50% cuando el sistema esté instalado y funcionando en tu computadora (USD 75).</li>
+            <li>Los precios se toman al valor del dólar <b>MEP</b> del día que se realiza el pago.</li>
+            <li>La instalación y la capacitación con los videos <b>están incluidas</b>, no tenés que pagar nada extra por eso.</li>
+        </ul>
+        <h3>Formas de pago que acepto:</h3>
+        <ul>
+            <li>Transferencia bancaria.</li>
+            <li>Efectivo.</li>
+            <li><b>Tarjetas de débito y crédito:</b> Si te resulta más cómodo, podés pagar con tarjeta de crédito y aprovechar las cuotas que te ofrezca tu banco para financiar la inversión.</li>
+        </ul>
+
+        <h2>Mi Compromiso con Vos</h2>
+        <p>Martín, mi objetivo principal es darte una herramienta que de verdad <strong>te quite un peso de encima</strong> y te ayude a que <strong>Electro S&M</strong> sea todavía más grande y ordenado. Contá conmigo para que el paso a lo digital sea lo más fácil posible.</p>
+    </main>
+
+    <div class="footer">
+        <p>Gracias por tu confianza. Estamos listos para implementar esta solución.</p>
+        <p>© 2025 Adema Sistemas – Soluciones Digitales a tu Medida.</p>
+    </div>
+</div>
+</body>
+</html>
